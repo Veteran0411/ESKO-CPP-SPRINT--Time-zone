@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\GlobalTracker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|solutionrelative:GlobalTracker\\GlobalTracker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|solutionrelative:GlobalTracker\\TimeZoneUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|solutionrelative:GlobalTracker\\TimeZoneManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|solutionrelative:GlobalTracker\\TimeZoneManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|solutionrelative:GlobalTracker\\TimeZoneUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\UserManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|solutionrelative:GlobalTracker\\UserManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\ManualDST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2DB5F46A-3C2C-4B65-B5B9-9C851F04DF7E}|GlobalTracker\\GlobalTracker.vcxproj|solutionrelative:GlobalTracker\\ManualDST.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserManager.h",
+              "DocumentMoniker": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\UserManager.h",
+              "RelativeDocumentMoniker": "GlobalTracker\\UserManager.h",
+              "ToolTip": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\UserManager.h",
+              "RelativeToolTip": "GlobalTracker\\UserManager.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-26T13:43:48.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TimeZoneManager.h",
+              "DocumentMoniker": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneManager.h",
+              "RelativeDocumentMoniker": "GlobalTracker\\TimeZoneManager.h",
+              "ToolTip": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneManager.h",
+              "RelativeToolTip": "GlobalTracker\\TimeZoneManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-26T13:43:41.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimeZoneUtils.h",
+              "DocumentMoniker": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneUtils.h",
+              "RelativeDocumentMoniker": "GlobalTracker\\TimeZoneUtils.h",
+              "ToolTip": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneUtils.h",
+              "RelativeToolTip": "GlobalTracker\\TimeZoneUtils.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-26T13:43:35.117Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GlobalTracker.cpp",
+              "DocumentMoniker": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\GlobalTracker.cpp",
+              "RelativeDocumentMoniker": "GlobalTracker\\GlobalTracker.cpp",
+              "ToolTip": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\GlobalTracker.cpp",
+              "RelativeToolTip": "GlobalTracker\\GlobalTracker.cpp",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAADUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-26T13:42:44.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TimeZoneManager.cpp",
+              "DocumentMoniker": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneManager.cpp",
+              "RelativeDocumentMoniker": "GlobalTracker\\TimeZoneManager.cpp",
+              "ToolTip": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneManager.cpp",
+              "RelativeToolTip": "GlobalTracker\\TimeZoneManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-26T11:18:19.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManualDST.cpp",
+              "DocumentMoniker": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\ManualDST.cpp",
+              "RelativeDocumentMoniker": "GlobalTracker\\ManualDST.cpp",
+              "ToolTip": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\ManualDST.cpp",
+              "RelativeToolTip": "GlobalTracker\\ManualDST.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-27T04:35:13.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TimeZoneUtils.cpp",
               "DocumentMoniker": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneUtils.cpp",
               "RelativeDocumentMoniker": "GlobalTracker\\TimeZoneUtils.cpp",
               "ToolTip": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\TimeZoneUtils.cpp",
               "RelativeToolTip": "GlobalTracker\\TimeZoneUtils.cpp",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAcwGAAAABvAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T10:45:41.03Z",
+              "WhenOpened": "2025-03-26T11:22:52.31Z",
               "EditorCaption": ""
             }
           ]
