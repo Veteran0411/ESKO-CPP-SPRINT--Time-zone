@@ -17,6 +17,7 @@ void displayMenu(const TimeZoneManager& manager, const UserManager& userManager)
     cout << "5. View hotspot cities\n";
     cout << "6. Admin login\n";
     cout << "7. Exit\n";
+    cout << "8. Help\n";
     cout << "====================================================\n";
     cout << "Enter your choice: ";
 }
@@ -125,6 +126,13 @@ int main() {
         case 7:
             cout << "Exiting program...\n";
             return 0;
+        case 8:
+            cout << "\nTime Zone Definitions:\n";
+            cout << "UTC (Coordinated Universal Time): The primary time standard by which the world regulates clocks and time.\n";
+            cout << "DST (Daylight Saving Time): The practice of advancing clocks during warmer months so that darkness falls later.\n";
+            cout << "Offset: The difference in hours and minutes from UTC for a particular time zone.\n";
+            cout << "Example: UTC+5:30 means the time zone is 5 hours and 30 minutes ahead of UTC.\n\n";
+            break;
         default:
             cout << "Invalid choice!\n";
         }

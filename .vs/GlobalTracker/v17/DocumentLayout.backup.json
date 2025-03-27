@@ -84,7 +84,7 @@
               "RelativeDocumentMoniker": "GlobalTracker\\GlobalTracker.cpp",
               "ToolTip": "C:\\Users\\soha\\source\\repos\\GlobalTracker\\GlobalTracker\\GlobalTracker.cpp",
               "RelativeToolTip": "GlobalTracker\\GlobalTracker.cpp",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAADUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAcwIwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-26T13:42:44.973Z",
               "EditorCaption": ""
@@ -99,8 +99,7 @@
               "RelativeToolTip": "GlobalTracker\\TimeZoneManager.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T11:18:19.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T11:18:19.17Z"
             },
             {
               "$type": "Document",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "GlobalTracker\\TimeZoneUtils.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T11:22:52.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T11:22:52.31Z"
             }
           ]
         }
