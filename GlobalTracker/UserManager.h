@@ -18,7 +18,9 @@ private:
     std::string trim(const std::string& str) {
         size_t start = str.find_first_not_of(" \t");
         size_t end = str.find_last_not_of(" \t");
-        return (start == std::string::npos || end == std::string::npos) ? "" : str.substr(start, end - start + 1);
+
+        // no position
+        return (start == std::string::npos || end == std::string::npos) ? "" : str.substr(start, end - start + 1); // substr(start index, to how many characters/index)
     }
 
 public:
@@ -33,10 +35,15 @@ public:
         return false;
     }
 
+
+    // to check if user is admin
+    // if i dont write const it gives compile error (getter should be marked as const becouse it should not modify members)
     bool isAdmin() const {
         return isAdminLoggedIn;
     }
 
+
+    // add favorite only if it is admin
     void addFavorite(const std::string& city) {
         try {
             std::ofstream file(favoritesFile, std::ios::app);
@@ -50,6 +57,8 @@ public:
         }
     }
 
+
+    // to store all the values in vector and then print it on console
     std::vector<std::string> getFavorites() {
         std::vector<std::string> favorites;
         try {

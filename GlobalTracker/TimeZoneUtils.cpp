@@ -16,24 +16,28 @@ void TimeZoneUtils::printCurrentTimeInZone(const string& tzID, bool useDST) {
     UErrorCode status = U_ZERO_ERROR;
 
     try {
-        time_t now = time(nullptr);
+        time_t now = time(nullptr); // ctime library , returns seconds elapsed from 1970 (datatype)
         if (now == -1) {
             throw runtime_error("Failed to get current time");
         }
 
-        UDate nowMillis = static_cast<UDate>(now) * 1000.0;
+        UDate nowMillis = static_cast<UDate>(now) * 1000.0;  // type double convert seconds to milliseconds
 
         // Create timezone (let ICU handle DST by default)
+
+        // unique pointer also called as smart pointer , amutomatically deletes the pointer when its out of scope
+
+        //the timezone returns the dynamically allocated object so pointer is required to manage memory manually so it returns address of memory
         unique_ptr<icu::TimeZone> tz(icu::TimeZone::createTimeZone(icu::UnicodeString::fromUTF8(tzID)));
         icu::UnicodeString tzIDCheck;
-        tz->getID(tzIDCheck);
+        tz->getID(tzIDCheck); // to check the valid region in timezone database
 
         if (tzIDCheck == icu::UnicodeString("GMT") && tzID != "GMT") {
             throw runtime_error("Invalid timezone: " + tzID);
         }
 
         if (!useDST) {
-            // Override with raw offset (ignore DST)
+            // creating manual dst using raw offset
             int32_t rawOffset = tz->getRawOffset();
             icu::UnicodeString noDstID = icu::UnicodeString("GMT") +
                 (rawOffset >= 0 ? "+" : "") +
@@ -63,7 +67,22 @@ void TimeZoneUtils::printCurrentTimeInZone(const string& tzID, bool useDST) {
         string timeStr;
         formattedTime.toUTF8String(timeStr);
 
-        cout << "Time in " << tzID << ": " << timeStr;
+
+        cout << "\n" << endl;
+        cout << "Time in " << tzID << ": " << timeStr<<endl;
+        int convertedYear = calendar->get(UCAL_YEAR, status);
+        int convertedMonth = calendar->get(UCAL_MONTH, status) + 1;
+        int convertedDay = calendar->get(UCAL_DATE, status);
+        int convertedHour = calendar->get(UCAL_HOUR_OF_DAY, status);
+        int convertedMinute = calendar->get(UCAL_MINUTE, status);
+
+        
+        cout << "Year: " << convertedYear << endl;
+        cout << "Month: " << convertedMonth << endl;
+        cout << "Day: " << convertedDay << endl;
+        cout << "Hour: " << convertedHour << endl;
+        cout << "Minute: " << convertedMinute << endl;
+     
         if (useDST && tz->inDaylightTime(nowMillis, status)) {
             cout << " (DST)";
         }
@@ -140,7 +159,7 @@ void TimeZoneUtils::convertTimeBetweenZones(bool useDST) {
         calendar->set(UCAL_SECOND, 0);
         calendar->set(UCAL_MILLISECOND, 0);
 
-        UDate sourceTime = calendar->getTime(status);
+        UDate sourceTime = calendar->getTime(status); // stores the ms from 1970 to specified time in sourceTime
         if (U_FAILURE(status)) {
             throw runtime_error("Failed to get source time");
         }
@@ -149,7 +168,7 @@ void TimeZoneUtils::convertTimeBetweenZones(bool useDST) {
         unique_ptr<icu::Calendar> targetCalendar(icu::Calendar::createInstance(*toZone, status));
         targetCalendar->setTime(sourceTime, status);
 
-        // Format the result
+        // Format the result ( parses the date and time to unicode string )
         icu::SimpleDateFormat formatter(
             icu::UnicodeString("yyyy-MM-dd HH:mm:ss z"),
             icu::Locale::getDefault(),
@@ -157,13 +176,27 @@ void TimeZoneUtils::convertTimeBetweenZones(bool useDST) {
         );
         formatter.setTimeZone(*toZone);
 
+
+        // unicode string to human readable format using utf 8
         icu::UnicodeString convertedTime;
         formatter.format(targetCalendar->getTime(status), convertedTime);
 
         string timeStr;
         convertedTime.toUTF8String(timeStr);
+        cout << "\nConverted Time: " << timeStr<<endl;
 
-        cout << "Converted Time: " << timeStr;
+        int convertedYear = targetCalendar->get(UCAL_YEAR, status);
+        int convertedMonth = targetCalendar->get(UCAL_MONTH, status) + 1;
+        int convertedDay = targetCalendar->get(UCAL_DATE, status);
+        int convertedHour = targetCalendar->get(UCAL_HOUR_OF_DAY, status);
+        int convertedMinute = targetCalendar->get(UCAL_MINUTE, status);
+
+        cout << "Year: " << convertedYear << endl;
+        cout << "Month: " << convertedMonth << endl;
+        cout << "Day: " << convertedDay << endl;
+        cout << "Hour: " << convertedHour << endl;
+        cout << "Minute: " << convertedMinute << endl;
+
         if (useDST && toZone->inDaylightTime(targetCalendar->getTime(status), status)) {
             cout << " (DST)";
         }
